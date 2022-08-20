@@ -1,0 +1,268 @@
+:root {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(232, 230, 230);
+}
+
+.weather-icon {
+    width: 325px;
+    height: auto;
+    display: inline-block;
+}
+
+.weather-icon-container {
+    margin-top: 1.3em;
+    max-width: 100%;
+    position: relative;
+    top: 1vh;
+}
+
+.weather-details-container {
+    padding: 0 0.3em;
+    display: grid;
+    gap: 1.5rem;
+    max-width: 100%;
+    min-height: 100vh;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.weather-wind-details-container {
+    height: 100%;
+    width: 100%;
+    /*border-right: gray solid 2px;*/
+    /*border-radius: 20px;*/
+}
+
+/*.weather-day{*/
+/*    background: rgb(4, 151, 204);*/
+/*    background: radial-gradient(circle, rgba(4, 151, 204, 1) 0%, rgba(4, 146, 204, 1) 0%, rgba(4, 78, 204, 0.26094187675070024) 100%, rgba(4, 193, 204, 0.17690826330532217) 100%);*/
+/*}*/
+
+/*.weather-night{*/
+/*    background: rgb(10,8,8);*/
+/*    background: radial-gradient(circle, rgba(10,8,8,1) 0%, rgba(0,0,0,0.711922268907563) 71%);*/
+/*}*/
+
+.weather-container {
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 1.5rem 0 0 0 white,
+    -1.5rem 0 0 0 white;
+}
+
+body {
+    margin: 0;
+}
+
+.weather-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5em;
+    padding: 0 3.5em;
+    margin-bottom: 3em;
+}
+
+.weather-info > * {
+    font-size: 3.5ch;
+}
+
+
+.city-info-container {
+    padding-top: 1.5em;
+    flex-direction: column;
+}
+
+.city-name {
+    font-size: 4ch;
+    font-weight: 600;
+    margin-bottom: 0.3em;
+}
+
+.city-date {
+    font-size: 3ch;
+    font-weight: 500;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.weather-sun-details-container {
+    width: 100%;
+    height: 100%;
+    grid-column-start: 3;
+    max-width: 100%;
+    font-size: 3.5ch;
+}
+
+.weather-wind-details > * {
+    margin-top: 0.5em;
+}
+
+.weather-sun-details > * {
+    margin-top: 0.5em;
+}
+
+.weather-wind-details {
+    font-size: 3.5ch;
+}
+
+.weather-sun-icon {
+    display: inline-block;
+    height: auto;
+    width: 200px;
+}
+
+.weather-sunrise-container {
+    flex-direction: column;
+    margin: 0;
+}
+
+.weather-sunset-container {
+    flex-direction: column;
+    margin-top: 1.5em;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-sun-naming {
+    margin-bottom: 0.3em;
+}
+
+.weather-other-details-icon {
+    display: inline-block;
+    height: auto;
+    width: 150px;
+}
+
+.weather-other-details-humidity-container {
+    flex-direction: column;
+}
+
+.weather-other-details-wind-container {
+    flex-direction: column;
+}
+
+.weather-other-details-container {
+    font-size: 3.5ch;
+}
+
+.weather-other-details-humidity-container {
+    margin-top: 3.5em;
+}
+
+.weather-naming {
+    font-weight: 700;
+    margin-bottom: 0.1em;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+input {
+    display: inline-block;
+    width: 20%;
+    transition: width 0.5s;
+    font-size: 2ch;
+    padding: 0.3em 0.6em;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+}
+
+input:focus {
+    width: 40%;
+    outline: 2px solid black;
+}
+
+.welcome-container {
+    flex-direction: column;
+    position: relative;
+    height: 80vh;
+    width: 100vw;
+}
+
+.welcome-text-container {
+    max-width: max-content;
+    margin-bottom: 2.5em;
+}
+
+p {
+    font-weight: 500;
+}
+
+.loader-container {
+    position: relative;
+    height: 90vh;
+    width: 100vw;
+}
+
+.error-container {
+    position: relative;
+    height: 80vh;
+    width: 100vw;
+    flex-direction: column;
+}
+
+.error-text {
+    font-weight: 500;
+    font-size: 4ch;
+    margin-bottom: 1em;
+}
+
+.error-img {
+    height: auto;
+    width: 300px;
+    display: inline-block;
+    margin-bottom: 1.5em;
+}
+
+.error-button {
+    all:unset;
+    text-align: center;
+    font-size: 2ch;
+    border-radius: 10px;
+    outline: 1px solid black;
+    padding: 0.7em 1em;
+    width: 20%;
+    cursor: pointer;
+    transition: 700ms background-color,
+    700ms outline-color,
+    700ms color,
+    500ms box-shadow;
+}
+
+
+.error-button:active {
+    box-shadow: inset 0 0 8px #c8c8c8;
+    outline-color: rgb(232, 230, 230);;
+}
+
+.error-button:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    outline-color: rgb(232, 230, 230);;
+}
+
+.error-button-container {
+    width: 100%;
+}
+
+.audio-player{
+    volume: 100%;
+}

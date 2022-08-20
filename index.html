@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="dist/index.js" defer></script>
+</head>
+<body>
+<header></header>
+<main>
+    <div class="error-container centered hidden"><img src="img/error.png" alt="" class="error-img">
+        <div class="error-text"><b>X</b> NOT FOUND <b>X</b></div>
+        <div class="error-button-container centered">
+            <button type="button" class="error-button">Return Back</button>
+        </div>
+    </div>
+    <div class="loader-container centered hidden"><img src="img/loader.gif" alt=""></div>
+    <div class="welcome-container centered">
+        <div class="welcome-text-container">
+            <h1>Welcome to the Current Weather application!</h1>
+            <p>To search for a current weather details of a city, enter the name of the city in the field below</p>
+        </div>
+        <input type="text" class="welcome-input" placeholder="Enter the city">
+    </div>
+    <div class="weather-details-container weather-night hidden">
+        <div class="weather-wind-details-container centered">
+            <div class="weather-other-details-container">
+                <div class="weather-other-details-wind-container centered">
+                    <div class="weather-other-details-wind-icon-container"><img src="img/wind.png" alt=""
+                                                                                class="weather-other-details-icon">
+                    </div>
+                    <div class="weather-naming">Wind</div>
+                    <div class="weather-other-details-wind-value"></div>
+                </div>
+                <div class="weather-other-details-humidity-container centered">
+                    <div class="weather-other-details-humidity-icon-container"><img src="img/humidity.png" alt=""
+                                                                                    class="weather-other-details-icon">
+                    </div>
+                    <div class="weather-naming">Humidity</div>
+                    <div class="weather-other-details-humidity-value"></div>
+                </div>
+            </div>
+        </div>
+        <div class="weather-container">
+            <div class="city-info-container centered">
+                <div class="city-name"></div>
+                <div class="city-date"></div>
+            </div>
+            <div class="weather-icon-container centered"><img src="" alt="" class="weather-icon"></div>
+            <ul class="weather-info">
+                <li class="weather-temperature"></li>
+                <li class="weather-description"></li>
+                <li class="weather-time"></li>
+            </ul>
+            <div class="input-container centered"><input type="text" placeholder="Enter a city"></div>
+            <audio src="" autoplay loop class="audio-player hidden"></audio>
+        </div>
+        <div class="weather-sun-details-container centered">
+            <div class="weather-sun-details">
+                <div class="weather-sunrise-container centered">
+                    <div class="weather-naming">Sunrise</div>
+                    <div class="weather-sunrise-time"></div>
+                    <div><img src="img/sunrise.png" alt="" class="weather-sun-icon"></div>
+                </div>
+                <div class="weather-sunset-container centered">
+                    <div class="weather-naming">Sunset</div>
+                    <div class="weather-sunset-time"></div>
+                    <div><img src="img/sunset.png" alt="" class="weather-sun-icon"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
