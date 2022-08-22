@@ -23,7 +23,7 @@ Current Weather is an application which enables a user to search for a current w
     ![](https://i.ibb.co/HtRdH2D/Screenshot-1.png)
     ![](https://i.ibb.co/HqgRxz6/Screenshot-2.png)
     - Then, a loader will be shown to you
-    ![](https://i.ibb.co/M1D4SGq/Screenshot-3.png)
+    ![](https://i.ibb.co/M1D4SGq/Screenshot-3.png
     - After that, if the city is found, all the weather data becomes visible for a user
     ![](https://i.ibb.co/TLWTWn1/Screenshot-6.png)
     - From this page, you are able to search for the weather of another city too. Just type into a bottom field
