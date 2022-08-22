@@ -26,7 +26,7 @@ Current Weather is an application which enables a user to search for a current w
     
     - Then, a loader will be shown to you
     
-    ![](https://i.ibb.co/M1D4SGq/Screenshot-3.png)
+    ![](https://iili.io/r3gOhv.md.png)
     
     - After that, if the city is found, all the weather data becomes visible for a user
      
