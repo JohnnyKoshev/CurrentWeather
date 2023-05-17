@@ -50,3 +50,7 @@ Current Weather is an application which enables a user to search for a current w
     - Lastly, in order to return back to the Introduction Page, click on the corresponding button:
     
     ![](https://i.ibb.co/G7fDPP6/Screenshot-12.png)
+    
+## License
+
+The project is licensed under the MIT License.
