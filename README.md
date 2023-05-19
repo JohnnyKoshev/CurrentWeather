@@ -18,13 +18,13 @@ Follow the steps below to get started with the Current Weather Application:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/current-weather-app.git
+   git clone https://github.com/JohnnyKoshev/CurrentWeather.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd current-weather-app
+   cd CurrentWeather
    ```
 
 3. Install the dependencies:
