@@ -1,11 +1,47 @@
 # Current Weather
 
  
-Current Weather is an application which enables a user to search for a current weather of any city. Multiple different languages are supported. Only main details are displayed.
+Current Weather is an application which enables a user to search for a current weather of any city. Multiple different languages are supported. The application fetches weather data from the OpenWeatherMap API and displays the temperature, description, time, wind speed, humidity, sunrise, and sunset times for the specified city.
 
 - Search for current weather using input
 - Enjoy attractive loader 
 - Get needed details about a current weather of the city
+
+## Prerequisites
+
+- Node.js and npm should be installed on your machine.
+
+## Getting Started
+
+Follow the steps below to get started with the Current Weather Application:
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/current-weather-app.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd current-weather-app
+   ```
+
+3. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Replace the `apiKey` variable in the `Weather` class (`index.ts`) with your OpenWeatherMap API key. You can obtain an API key by signing up at [OpenWeatherMap](https://openweathermap.org/).
+
+5. Build the TypeScript code:
+
+   ```bash
+   npm run build
+   ```
+
+6. Open the `index.html` file in your preferred web browser.
 
 ## Features
 
@@ -17,6 +53,7 @@ Current Weather is an application which enables a user to search for a current w
 - If the city is not found, then the user-friendly error message is demonstrated
 
 ### ************************************************************
+
 ## User Flow -- Operations
 - Introduction Page
     - Initially, you are asked to type the name of the city
